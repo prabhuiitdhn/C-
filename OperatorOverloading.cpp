@@ -32,6 +32,10 @@ struct vector2 {
 	vector2 operator* (const vector2& other) const {
 		return Multiply(other);
 	}
+
+	bool operator==(const vector2& other) const {
+		return x == other.x && y == other.y;
+	}
 };
 
 //std::ostream //is for output stream.
